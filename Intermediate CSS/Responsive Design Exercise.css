@@ -1,0 +1,35 @@
+<!-- em is equal to the default font0size of the element so it let's you set properties relative to the font size -->
+
+<!-- rem is relative to the root element while em is relative to the parent element -->
+
+<!-- Mobile first is designing layouts so it fits on mobile first and then moving upwards in size towards desktop -->
+
+<!-- BEM stands for block element modifier and is a mtheodology for naming and structuring css and front end code.  -->
+
+.col-4 {
+	width: 33%
+}
+
+.col-6 {
+	width: 50%
+}
+
+.col-12 {
+	width: 100%
+}
+
+@media(min-width: 765px) and (max-width: 960px) {
+	.col-4{
+		width: 50%
+	}
+
+	.col-6{
+		width: 100%
+	}
+}
+
+@media(max-width: 765px){
+	.col-4{
+		width: 100%
+	}
+}
