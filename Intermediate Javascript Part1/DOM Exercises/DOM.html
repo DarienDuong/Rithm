@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+
+    <script>
+        var container = document.getElementById("container")
+
+        var container = document.querySelector("#container")
+
+        var second = document.querySelectorAll(".second")
+        var second = document.getElementByClassName("second")
+
+        var third = document.querySelector("ol .third")
+
+        container.innerText = "Hello"
+
+        var footer = document.querySelector(".footer")
+        footer.classList.add("main")
+
+        footer.classList.remove("main")
+
+        var li = document.createElement("li")
+
+        li.innerText = 'four'
+
+        var ul = document.querySelector("ul")
+        ul.appendChild(li)
+
+        var olli = document.querySelectorAll("ol li")
+        for(var i =0; i<olli.length; i++){
+            olli[i].style.backgroundColor = "green"
+        }
+
+
+        var footerRemove = document.querySelector(".footer")
+        var container = document.querySelector("#container")
+        container.removeChild(footerRemove)
+    </script>
+</body>
+</html>
